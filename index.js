@@ -224,7 +224,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `𝙊𝙡𝙖́ ◤◢ @${num.split('@')[0]} 𝘽𝙚𝙢 𝙫𝙞𝙣𝙙𝙤 𝙖𝙤 𝙜𝙧𝙪𝙥𝙤:n/━━━━❰･ *${mdata.subject}* ･❱━━━━\n\n𝙋𝙤𝙧 𝙛𝙖𝙫𝙤𝙧 𝙡𝙚𝙞𝙖 𝙖𝙨 𝙧𝙚𝙜𝙧𝙖𝙨\n E 𝙨𝙚𝙟𝙖 𝙛𝙚𝙡𝙞𝙯`
+				teks = `𝙊𝙡𝙖́ @${num.split('@')[0]} 𝘽𝙚𝙢 𝙫𝙞𝙣𝙙𝙤 𝙖𝙤 𝙜𝙧𝙪𝙥𝙤:n/━━━━❰･ *${mdata.subject}* ･❱━━━━\n\n𝙋𝙤𝙧 𝙛𝙖𝙫𝙤𝙧 𝙡𝙚𝙞𝙖 𝙖𝙨 𝙧𝙚𝙜𝙧𝙖𝙨\n E 𝙨𝙚𝙟𝙖 𝙛𝙚𝙡𝙞𝙯`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 				client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -304,7 +304,7 @@ async function starts() {
 			const mod = [ownerNumber,"5548991635455@s.whatsapp.net"]//ubah nomor lo
 			const adminbotnumber = ["5548991635455@s.whatsapp.net"]//ubah nomor lo
 			const frendsowner = ["5548991635455@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["5548991635455","558381572957@s.whatsapp.net","553398176981@s.whatsapp.net","5548998362948@s.whatsapp.net"]
+			const premium = ["5548991635455@s.whatsapp.net","558381572957@s.whatsapp.net","553398176981@s.whatsapp.net","5548998362948@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -3847,11 +3847,11 @@ break
 						if (isSimi) return reply('O modo Simi está ativo')
 						samih.push(from)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Ativado com sucesso o modo simi neste grupo 😗️')
+						reply('Ativado com sucesso o modo simi neste grupo')
 					} else if (Number(args[0]) === 0) {
 						samih.splice(from, 1)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Desativado modo simi com sucesso neste grupo 😡️')
+						reply('Desativado modo simi com sucesso neste grupo')
 					} else {
 						reply('1 para ativar, 0 para desativar, lerdao vc em KKKKK')
 					}
@@ -3864,11 +3864,11 @@ break
 						if (isWelkom) return reply('Já esta ativo.')
 						welkom.push(from)
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
-						reply('Ativou com sucesso o recurso de boas-vindas neste grupo 😉️')
+						reply('Ativou com sucesso o recurso de boas-vindas neste grupo')
 					} else if (Number(args[0]) === 0) {
 						welkom.splice(from, 1)
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
-						reply('Desativou com sucesso o recurso de boas-vindas neste grupo 😡️')
+						reply('Desativou com sucesso o recurso de boas-vindas neste grupo')
 					} else {
 						reply('1 para ativar, 0 para desativar, lerdão vc em KAKKKK')
 					}
@@ -3886,7 +3886,7 @@ break
 						client.updateProfilePicture(botNumber, buffer)
 						mentions(`Foto do perfil atualizada com sucesso, usando a foto do perfil @${id.split('@')[0]}`, [jid], true)
 					} catch (e) {
-						reply('Putz, deu erro, a pessoa deve estar sem foto 😔')
+						reply('Putz, deu erro, a pessoa deve estar sem foto')
 					}
 					break
 		        case 'setfoto2':
