@@ -300,11 +300,11 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["556993733829@s.whatsapp.net"] // replace this with your number
-			const mod = [ownerNumber,"556993733829@s.whatsapp.net"]//ubah nomor lo
-			const adminbotnumber = ["556993733829@s.whatsapp.net"]//ubah nomor lo
-			const frendsowner = ["556993733829@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["556993733829@s.whatsapp.net","559784130980@s.whatsapp.net","557599941062@s.whatsapp.net","558598669655@s.whatsapp.net","5511949051934@s.whatsapp.net","554792091566@s.whatsapp.net","558699541889@s.whatsapp.net","559294313229@s.whatsapp.net","554298653614@s.whatsapp.net"]
+			const ownerNumber = ["5548991635455@s.whatsapp.net"] // replace this with your number
+			const mod = [ownerNumber,"5548991635455@s.whatsapp.net"]//ubah nomor lo
+			const adminbotnumber = ["5548991635455@s.whatsapp.net"]//ubah nomor lo
+			const frendsowner = ["5548991635455@s.whatsapp.net"]//ubah nomor lo
+			const premium = ["5548991635455@s.whatsapp.net","558381572957@s.whatsapp.net","553398176981@s.whatsapp.net","5548998362948@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -3051,7 +3051,7 @@ break
 				client.updatePresence(from, Presence.composing)
 				if (!isGroup) return reply(mess.only.group)
 					try {
-					ppimg = await client.getProfilePicture(from)
+					ppimg = await client.get masProfilePicture(from)
 				} catch {
 					ppimg = 'https://i.ibb.co/NthF8ds/IMG-20201223-WA0740.jpg'
 				}
@@ -3067,7 +3067,7 @@ break
 					break
 			    case 'owner':
 			    case 'dono':
-                    client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
+                    client.sendMessage(from, {displayname: "joao", vcard: vcard}, MessageType.contact, { quoted: mek})
                     client.sendMessage(from, 'Meu dono é esse aí tal de "joao"🙄, chama ele aí ele',MessageType.text, { quoted: mek} )
                     break
                 case 'fitnah':	
@@ -3776,7 +3776,7 @@ break
 					}
 					break
 				case 'banir':
-					if (!isGroup) return reply(mess.only.group)
+					if (!isGroup) return reply(mess.onl y.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('A marca-alvo que você quer chutar!')
