@@ -300,7 +300,7 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["4891635455@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["554891635455@s.whatsapp.net"] // replace this with your number
 			const mod = [ownerNumber,"554891635455@s.whatsapp.net"]//ubah nomor lo
 			const adminbotnumber = ["554891635455@s.whatsapp.net"]//ubah nomor lo
 			const frendsowner = ["554891635455@s.whatsapp.net"]//ubah nomor lo
@@ -855,15 +855,15 @@ if (text.includes("placa"))
 					reply(anu.result.hasil)
 					break
                    case 'modapk':
-                    if (!isGroupAdmins) return reply(mess.only.admin)
+                    if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, modapk(prefix), text, { quoted: mek })
                     break
                    case 'gbin':
-                    if (!isGroupAdmins) return reply(mess.only.admin)
+                    if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, gbin(prefix), text, { quoted: mek })
                     break
                    case 'gpessoa':
-                    if (!isGroupAdmins) return reply(mess.only.admin)
+                    if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, gpessoa(prefix), text, { quoted: mek })
                     break
                    case 'destrava':
@@ -871,15 +871,15 @@ if (text.includes("placa"))
                     client.sendMessage(from, destrava(prefix), text, { quoted: mek })
                     break
                    case 'pack':
-                    if (!isGroupAdmins) return reply(mess.only.admin)
+                    if (!isGroupAdmins) return reply(mess.only.premium)
                     client.sendMessage(from, pack(prefix), text, { quoted: mek })
                     break
                    case 'chentai':
-                    if (!isGroupAdmins) return reply(mess.only.admin)
+                    if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, chentai(prefix), text, { quoted: mek })
                     break
                    case 'gcpf':
-                    if (!isGroupAdmins) return reply(mess.only.admin)
+                    if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, gcpf(prefix), text, { quoted: mek })
                     break
 				case 'ytmp4':
