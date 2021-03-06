@@ -875,7 +875,7 @@ if (text.includes("placa"))
                     client.sendMessage(from, pack(prefix), text, { quoted: mek })
                     break
                    case 'chentai':
-                    if (!isGroupAdmins) return reply(mess.only.padmin)
+                    if (!isGroupAdmins) return reply(mess.only.admin)
                     client.sendMessage(from, chentai(prefix), text, { quoted: mek })
                     break
                    case 'gcpf':
