@@ -871,7 +871,7 @@ if (text.includes("placa"))
                     client.sendMessage(from, destrava(prefix), text, { quoted: mek })
                     break
                    case 'pack':
-                    if (!is) return reply(mess.only.premium)
+                    if (!is) return reply(mess.only.)
                     client.sendMessage(from, pack(prefix), text, { quoted: mek })
                     break
                    case 'chentai':
