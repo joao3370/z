@@ -855,15 +855,15 @@ if (text.includes("placa"))
 					reply(anu.result.hasil)
 					break
                    case 'modapk':
-                    if (!isPremium) return reply(mess.only.premium)
+                    if (!isGroupAdmins) return reply(mess.only.admin)
                     client.sendMessage(from, modapk(prefix), text, { quoted: mek })
                     break
                    case 'gbin':
-                    if (!isPremium) return reply(mess.only.premium)
+                    if (!isGroupAdmins) return reply(mess.only.admin)
                     client.sendMessage(from, gbin(prefix), text, { quoted: mek })
                     break
                    case 'gpessoa':
-                    if (!isPremium) return reply(mess.only.premium)
+                    if (!isGroupAdmins) return reply(mess.only.admin)
                     client.sendMessage(from, gpessoa(prefix), text, { quoted: mek })
                     break
                    case 'destrava':
@@ -871,15 +871,15 @@ if (text.includes("placa"))
                     client.sendMessage(from, destrava(prefix), text, { quoted: mek })
                     break
                    case 'pack':
-                    if (!is) return reply(mess.only.)
+                    if (!isGroupAdmins) return reply(mess.only.admin)
                     client.sendMessage(from, pack(prefix), text, { quoted: mek })
                     break
                    case 'chentai':
-                    if (!isPremium) return reply(mess.only.premium)
+                    if (!isGroupAdmins) return reply(mess.only.padmin)
                     client.sendMessage(from, chentai(prefix), text, { quoted: mek })
                     break
                    case 'gcpf':
-                    if (!isPremium) return reply(mess.only.premium)
+                    if (!isGroupAdmins) return reply(mess.only.admin)
                     client.sendMessage(from, gcpf(prefix), text, { quoted: mek })
                     break
 				case 'ytmp4':
